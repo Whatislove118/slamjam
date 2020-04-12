@@ -51,7 +51,7 @@ import java.util.Set;
             String src = document.select("img").get(2).absUrl("src");
             Elements sizesListElements = document.select("option[data-availability]");
             for (Element size : sizesListElements){
-                sizes.add(size.text());
+                sizes.add(size.text()   );
             }
             String price = document.select("span.value").first().text();
 
